@@ -23,3 +23,8 @@ class NeboscopeBME280:
 if __name__ == '__main__':
     testbme280 = NeboscopeBME280()
     print(testbme280.interview())
+    
+    
+'''
+Протестированно работает штатно.
+'''

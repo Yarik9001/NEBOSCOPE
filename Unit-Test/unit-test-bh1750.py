@@ -18,4 +18,7 @@ class NeboscopeBH1750:
 if __name__ == '__main__':
     testbh170 = NeboscopeBH1750()
     print(testbh170.interview())
-    
+
+'''
+Не подключен 
+'''
