@@ -28,7 +28,7 @@ while True:
     print("{:>5}\t{:>5.3f}".format(chan.value, chan.voltage))
     time.sleep(0.5)
 
-
+'''
 class Acp:
     def __init__(self):
         '''
@@ -71,3 +71,4 @@ class Acp:
         MassOut['a6'] = round((a6.value - self.CorNulA6) * 0.00057321919, 3)
 
         return MassOut
+'''
