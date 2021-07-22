@@ -31,9 +31,9 @@ while True:
 '''
 class Acp:
     def __init__(self):
-        '''
-        Класс описывающий взаимодействие и опрос датчиков тока 
-        '''
+        
+        #Класс описывающий взаимодействие и опрос датчиков тока 
+        
         self.i2c = busio.I2C(board.SCL, board.SDA)
         self.ads13 = ADS.ADS1115(self.i2c)
         self.adc46 = ADS.ADS1115(self.i2c, address=0x49)
@@ -53,9 +53,9 @@ class Acp:
         self.CorNulA6 = a6.value
 
     def ReadAmperemeter(self, MassOut: dict):
-        '''
-        Функция опроса датчиков тока 
-        '''
+        
+        #Функция опроса датчиков тока 
+        
         a1 = AnalogIn(self.ads13, ADS.P0)
         a2 = AnalogIn(self.ads13, ADS.P1)
         a3 = AnalogIn(self.ads13, ADS.P2)
@@ -71,4 +71,8 @@ class Acp:
         MassOut['a6'] = round((a6.value - self.CorNulA6) * 0.00057321919, 3)
 
         return MassOut
+'''
+
+'''
+Протестированно работает, надо подлючить анемометр и попробовать имерять скороть ветра, так же надо реализовать перевод из вольтажа а скорость ветра.
 '''
