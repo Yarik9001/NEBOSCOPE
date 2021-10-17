@@ -11,7 +11,7 @@ chan = AnalogIn(ads, ADS.P0)
 
 
 while True:
-    fileInput = open('test-1-an.txt' "a+")
+    fileInput = open('test-1-an.txt', "a+")
     fileInput.write(str(chan.voltage * 6)+'\n')
     fileInput.close()
-    time.sleep(0.5)
+    time.sleep(10)
