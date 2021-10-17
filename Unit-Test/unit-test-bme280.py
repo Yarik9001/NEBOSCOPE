@@ -4,7 +4,7 @@
 '''
 import smbus2
 import bme280
-
+from n
 class NeboscopeBME280:
     def __init__(self, port=1, address=0x76):
         self.port = 1
