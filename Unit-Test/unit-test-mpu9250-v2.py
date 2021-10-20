@@ -25,7 +25,6 @@ try:
         print(" mx = " , mag['x'] )
         print(" my = " , mag['y'] )
         print(" mz = " , mag['z'] )
-        print()
 
         time.sleep(0.5)
 
